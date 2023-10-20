@@ -1,3 +1,5 @@
+// ES Module Syntax
+
 /**
  * Extracts a YouTube video ID from a URL.
  * @param {string} url - The YouTube video URL.
@@ -10,19 +12,18 @@ const extractVideoIdFromUrl = (url) => {
     const matchFullUrl = url.match(regexFullUrl);
     const matchShortUrl = url.match(regexShortUrl);
     const matchShortsUrl = url.match(regexShortsUrl);
-  
+
     if (matchFullUrl && matchFullUrl[1]) {
-      return matchFullUrl[1];
+        return matchFullUrl[1];
     } else if (matchShortUrl && matchShortUrl[1]) {
-      return matchShortUrl[1];
+        return matchShortUrl[1];
     } else if (matchShortsUrl && matchShortsUrl[1]) {
-      return matchShortsUrl[1];
+        return matchShortsUrl[1];
     }
-  
+
     return null;
-  };
-  
-  module.exports = {
-    extractVideoIdFromUrl,
-  };
-  
+};
+
+export {
+    extractVideoIdFromUrl
+};

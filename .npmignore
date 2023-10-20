@@ -1,0 +1,41 @@
+# Development and build artifacts
+test/
+tests/
+examples/
+docs/
+*.md
+*.markdown
+
+# Editor-specific files and directories
+.vscode/
+.idea/
+*.sublime-*
+*.suo
+*.user
+*.sln
+*.suo
+
+# Git-related files
+.git/
+.gitignore
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+
+# Configuration files
+*.config.js
+*.json
+*.config.json
+
+# Build scripts and configuration
+.travis.yml
+.circleci/
+appveyor.yml
+
+# Source control folders
+.hg/
+.svn/
+
+# Development dependencies
+devDependencies/
