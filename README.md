@@ -1,11 +1,14 @@
-# my-youtube-utils
+# youtube-video-id-extractor
 
 A utility to extract YouTube video IDs from URLs.
 
 ## Installation
 
-You can install this package using npm: npm i youtube_video_id_extractor
+```
 
+ npm i youtube_video_id_extractor
+
+```
 
 ## Usage
 
@@ -19,7 +22,7 @@ const { extractVideoIdFromUrl } = require('youtube-video-id-extractor');
 
 ```
 
-// or, if you're using ES6 modules:
+if you're using ES6 modules:
 
 ```
  import { extractVideoIdFromUrl } from 'youtube-video-id-extractor';
@@ -28,7 +31,8 @@ const { extractVideoIdFromUrl } = require('youtube-video-id-extractor');
 
 
 
-Use the extractVideoIdFromUrl function to extract a YouTube video ID from a URL:
+
+Use the extractVideoIdFromUrl function to extract a YouTube video ID from a URL :
 
 ```
 const videoUrl = 'https://www.youtube.com/watch?v=VIDEO_ID';
